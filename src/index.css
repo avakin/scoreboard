@@ -1,0 +1,83 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  /* background-color: #242424; */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+input,
+button {
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+#root {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.team {
+  display: flex;
+  gap: 0.275rem;
+  align-items: center;
+}
+.teamName {
+  font-size: 1rem;
+}
+
+.teamScore {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.scores {
+  display: flex;
+  align-items: center;
+}
+.resultRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.formWrapper {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.formWrapper input {
+  max-width: 90px;
+}
+
+@media screen and (max-width: 480px) {
+  .resultRow {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 1rem;
+  }
+}
