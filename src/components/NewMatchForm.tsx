@@ -14,7 +14,7 @@ export const NewMatchForm = () => {
 
   const onSubmitForm = () => {
     if (!formValues.away || !formValues.home) {
-      console.error("Please fill in all the fields ");
+      console.error("Please fill in all the fields");
       return;
     }
 
