@@ -5,6 +5,7 @@ export const NewMatchForm = () => {
   const initialValues = { home: "", away: "" };
   const [formValues, setValues] = useState(initialValues);
   const { onStart } = useContext(BoardContext);
+
   const onChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
     setValues((prev) => ({
       ...prev,

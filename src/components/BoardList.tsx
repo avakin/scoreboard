@@ -12,15 +12,9 @@ export const BoardList = () => {
           return (
             <div className="resultRow" key={el.id}>
               <div className="scores">
-                <div className="team">
-                  <span className="teamName">{el.home}</span>
-                  <span className="teamScore">{el.scores.home}</span>
-                </div>
+                <TeamInfo score={el.scores.home} name={el.home} />
                 -
-                <div className="team">
-                  <span className="teamScore">{el.scores.away}</span>
-                  <span className="teamName">{el.away}</span>
-                </div>
+                <TeamInfo score={el.scores.away} name={el.away} />
               </div>
               <MatchScoresForm scores={el.scores} id={el.id} />
             </div>
@@ -32,3 +26,10 @@ export const BoardList = () => {
     </div>
   );
 };
+
+const TeamInfo = ({ score, name }: { score: number; name: string }) => (
+  <div className="team">
+    <span className="teamName">{name}</span>
+    <span className="teamScore">{score}</span>
+  </div>
+);
